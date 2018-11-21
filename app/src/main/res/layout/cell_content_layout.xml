@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/roundcorner"
+    android:visibility="gone">
+
+
+    <!-- content header image -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/head_image"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+      android:background="#ffae00" />
+
+    <TextView
+        android:id="@+id/head_image_left_text"
+        style="@style/ContentImageBadgeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/head_image"
+        android:layout_alignLeft="@id/head_image"
+        android:layout_alignStart="@id/head_image"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/requests_count_mock" />
+
+    <TextView
+        style="@style/ContentImageBadgeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/head_image_left_text"
+        android:layout_alignLeft="@id/head_image_left_text"
+        android:layout_alignStart="@id/head_image_left_text"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/Analytics_number" />
+
+    <TextView
+        android:id="@+id/head_image_right_text"
+        style="@style/ContentImageBadgeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/head_image"
+        android:layout_alignEnd="@id/head_image"
+        android:layout_alignRight="@id/head_image"
+        android:paddingBottom="10dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/weight_mock" />
+
+    <TextView
+        style="@style/ContentImageBadgeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/head_image_right_text"
+        android:layout_alignLeft="@id/head_image_right_text"
+        android:layout_alignStart="@id/head_image_right_text"
+        android:text="@string/weight_badge" />
+
+    <TextView
+        android:id="@+id/head_image_center_text"
+        style="@style/ContentImageBadgeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/head_image"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:text="@string/last_analytics" />
+
+    <TextView
+        style="@style/ContentImageBadgeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/head_image_center_text"
+        android:layout_alignLeft="@id/head_image_center_text"
+        android:layout_alignStart="@id/head_image_center_text"
+        android:text="@string/last_analytics_date" />
+
+
+</RelativeLayout>
+
+    <!-- content body layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgContent"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="9dp">
+
+        <!-- avatar and name part -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/patient_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wala" />
+
+
+            <TextView
+                android:id="@+id/nom_prenom_patient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/patient_image"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/patient_image"
+                android:layout_toRightOf="@id/patient_image"
+                android:text="@string/client_name_mock"
+                android:textColor="@color/mainTextColor"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+        <!-- divider line -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="9dp"
+            android:src="@color/contentDividerLine" />
+
+        <!-- addresses part -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/carnet" />
+
+                    <TextView
+                        android:id="@+id/cin_patient"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/gift" />
+
+                    <TextView
+                        android:id="@+id/anniv_patient"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/house" />
+
+                    <TextView
+                        android:id="@+id/adresse_patient"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/gender" />
+
+                        <TextView
+                            android:id="@+id/sexe_patient"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@android:color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/phone" />
+
+                        <TextView
+                            android:id="@+id/numero_Patient"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@android:color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- divider line -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="7dp"
+            android:src="@color/contentDividerLine" />
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/roundcorner"
+            android:padding="10dp"
+            android:focusable="false"
+            android:text="@string/request_btn_text"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

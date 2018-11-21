@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Home" android:title="Accueil" android:icon="@drawable/home" />
+    <item android:id="@+id/Profile" android:title="Mon Profile" android:icon="@drawable/profile"/>
+    <item android:id="@+id/listpatient" android:title="Mes patients" android:icon="@drawable/patientt" />
+    <item android:id="@+id/aboutus" android:title="nous contacter" android:icon="@drawable/contactus" />
+    <item android:id="@+id/stat" android:title="Statistique" android:icon="@drawable/stat" />
+    <item android:id="@+id/map" android:title="plan" android:icon="@drawable/position"/>
+    <item android:id="@+id/Logout" android:title="Déconnexion" android:icon="@drawable/logout" />
+</menu>

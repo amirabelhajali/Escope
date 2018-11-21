@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="escope.esprit.escope.Drawer.MakeAnalysisFragment">
+
+    <ImageView
+        android:id="@+id/imagevirus"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sang"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+       android:orientation="horizontal" >
+<Button
+    android:layout_width="120dp"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+    android:id="@+id/makeanalysis"
+    android:text="Make Analysis"
+    android:textColor="#FFF"
+    android:gravity="center"
+    android:layout_height="120dp"
+    android:background="@drawable/selector_xml_btn_yellow_round"
+    />
+        <Button
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/takeimage"
+            android:text="take image"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_height="120dp"
+            android:background="@drawable/selector_xml_btn_yellow_round"
+            />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,3 @@
+# Referenced at /Users/utilisateur/Documents/Escope 2/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:38
+-keep class escope.esprit.escope.User.Constants { <init>(...); }
+
