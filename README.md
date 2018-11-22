@@ -11,3 +11,4 @@ hématologiques par le traitement d'image, elle permet aussi le suivi des patien
 
 <img src="https://user-images.githubusercontent.com/37215501/48900895-fe3e6b80-ee53-11e8-99a2-0a234cfc51ee.png" alt="alt text" width="250" height="350">
 
+<img src="https://user-images.githubusercontent.com/37215501/48903073-cab30f80-ee5a-11e8-877a-d6ebada92e12.jpg" alt="alt text" width="250" height="350">
